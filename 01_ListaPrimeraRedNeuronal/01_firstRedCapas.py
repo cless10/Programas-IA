@@ -1,4 +1,4 @@
-#Mi primera red neuronal con Python y tensorflow
+#Mi segunda red neuronal con Python y tensorflow, con mas de una capa de neuronas
 import tensorflow as tf;
 import numpy as np;
 
