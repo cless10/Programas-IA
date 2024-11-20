@@ -43,7 +43,7 @@ plt.savefig("mygraph_firstNet.png");
 print("");
 print("Hagamos una predicción!");
 #aPredecir = 37;
-resultado = modelo.predict([aPredecir]);
+resultado = modelo.predict(x=np.array([aPredecir]));
 print("Predecir " + str(aPredecir) + " celsius:");
 print("El resultado es: " + str(resultado) + " fahrenheit!");
 print("\nEste programa genera una gráfica sobre el modelo. Puedes revisar el archivo 'mygraph_firstNet.png'\n");
