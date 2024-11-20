@@ -1,0 +1,31 @@
+1) crear un carpeta para el proyecto
+	C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\
+	C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes>mkdir segunda-red-img-env
+	C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes>cd segunda-red-img-env
+	C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>
+
+2) crear un entorno de trabajo de python para el proyecto:
+	C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>python -m venv segunda-red-img-env	
+
+3) activar el entorno de trabajo:
+	C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>.\Scripts\activate
+
+4) instalar tensorflow:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>pip install tensorflow
+	
+5) instalar tensorflow_datasets:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>pip install tensorflow_datasets
+	
+6) instalar numpy:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>pip install numpy
+
+7) instalar matplotlib:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>pip install matplotlib	
+
+8) ejecutar el editor vscode:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>code .
+
+9) crear archivo (en vscode) 03_redReconoceImg.py
+
+10) ejecutar el programa:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\02_RedReconoceImagenes\segunda-red-img-env>py 03_redReconoceImg.py
