@@ -1,0 +1,28 @@
+1) crear un carpeta para el proyecto
+	C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\
+	C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow>mkdir primer-red-env
+	C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow>cd primer-red-env
+	C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>
+
+2) crear un entorno de trabajo de python para el proyecto:
+	C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>python -m venv primer-red-env	
+
+3) activar el entorno de trabajo:
+	C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>.\Scripts\activate
+
+4) instalar tensorflow:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>pip install tensorflow
+	
+5) instalar numpy:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>pip install numpy	
+
+6) instalar matplotlib:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>pip install matplotlib	
+
+7) ejecutar el editor vscode:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>code .
+
+8) crear archivo (en vscode) 01primeraRed.py
+
+9) ejecutar el programa:
+	(primer-red-env) C:\Users\fgarcial\Documents\ProgramasIA\01_TuPrimeraRedNeuronalEnPythonYTensorflow\primer-red-env>py primeraRed.py
