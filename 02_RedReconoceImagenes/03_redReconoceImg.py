@@ -4,7 +4,7 @@ import tensorflow_datasets as tfds
 #descargamos el dataset de imagenes, con esta linea ejecutar el archivo y se descargaran
 datos, metadatos = tfds.load('fashion_mnist', as_supervised=True, with_info=True)
 #vemos la información de los metadatos (tiene 60000 datos para entrenamiento y 10000 para pruebas)
-#print(metadatos)
+print(metadatos)
 
 #ponemos los datos en variables diferentes para poder utilizarlos
 datos_entrenamiento, datos_pruebas = datos['train'], datos['test']
@@ -62,10 +62,10 @@ plt.savefig("prendas.png")  #Para no instalar un backend, mejor exportamos el gr
 
 #Definimos el modelo
 modelo = tf.keras.Sequential([
-    tf.keras.layers.Flatten(input_shape=(28,28)),   #1 - blanco y negro (una capa)
+    tf.keras.layers.Flatten(input_shape=(28,28,1)),   #1 - blanco y negro (una capa), pone la matriz en una sola dimension, 784 neuronas donde se recibira cada pixel
     tf.keras.layers.Dense(50, activation=tf.nn.relu),
     tf.keras.layers.Dense(50, activation=tf.nn.relu),
-    tf.keras.layers.Dense(10, activation=tf.nn.softmax)         #para redes de clasificacion
+    tf.keras.layers.Dense(10, activation=tf.nn.softmax)  #funcion de activación softmax, se usa como neurona de salida para redes de clasificacion
 ])
 
 #Compilamos el modelo
@@ -112,7 +112,7 @@ for imagenes_prueba, etiquetas_prueba in datos_pruebas.take(1):
 
 def graficar_imagen(i, arr_predicciones, etiquetas_reales, imagenes):
     arr_predicciones, etiqueta_real, img = arr_predicciones[i], etiquetas_reales[i], imagenes[i] 
-    plt.figure()
+    #plt.figure()
     plt.grid(False)
     plt.xticks([])
     plt.yticks([])
@@ -150,7 +150,7 @@ num_imagenes = filas*columnas
 plt.figure(figsize=(2*2*columnas, 2*filas))
 
 for i in range(num_imagenes):
-    plt.subplot(filas, 2*columnas, 2*i+2)
+    plt.subplot(filas, 2*columnas, 2*i+1)
     graficar_imagen(i, predicciones, etiquetas_prueba, imagenes_prueba)
     plt.subplot(filas, 2*columnas, 2*i+2)
     graficar_valor_arreglo(i, predicciones, etiquetas_prueba)
